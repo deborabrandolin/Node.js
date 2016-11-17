@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">api-bruce-campaign-monitor</h1>
+          <h3 class="report-date">Thursday, July 14 2016, 09:40am</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">2.173<span>S</span></li>
+              <li class="qs-item summary-suites" title="Suites">9</li>
+              <li class="qs-item summary-tests" title="Tests">20</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">20</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">2.173<span>S</span></h1>
+              <h4 class="summary-label">S</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">9</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">20</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">20</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="10f53fcc-3097-480f-979d-ffa42193724d" class="suite has-tests has-passed">
+            <h3 class="suite-title">API Bruce Campaign Monitor /Account</h3>
+            <h5 class="suite-filename">\test\account-tests.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="10f53fcc-3097-480f-979d-ffa42193724d" class="suite-chart" width="50" height="50" data-total-passes="3" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">243 ms</li>
+                <li class="suite-summary-item tests">3</li>
+                <li class="suite-summary-item passed">3</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#10f53fcc-3097-480f-979d-ffa42193724d-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="10f53fcc-3097-480f-979d-ffa42193724d-test-list" class="list-group test-list collapse in">
+                    <div id="963c5e5f-fac7-4326-958e-25169c8f09d4" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Validando e extraindo token.. (Api Mobile v10: Método POST /Usuarios/AutenticarConta)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#963c5e5f-fac7-4326-958e-25169c8f09d4 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">173 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(auth_url)<br>.post(<span class="hljs-string">'/api/Usuarios/AutenticarConta'</span>)<br>.send({<br>  identificador: user.documento,<br>  senha: user.senha<br>})<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  setToken(res.body.token);<br>  done();<br>  <span class="hljs-comment">//console.log('        token: ' , res.body.token);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="e4341556-120b-4f3f-87ee-a79ed76db67c" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Account - Roles
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#e4341556-120b-4f3f-87ee-a79ed76db67c > .test-code.collapse">Code</button>
+              <span class="test-duration medium">62 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'api/Account/roles'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(res.body[<span class="hljs-number">0</span>].name).containEql(<span class="hljs-string">'Todos'</span>);<br>  done();<br>  <span class="hljs-comment">//console.log('        roles: ' , res.body[0].name);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="f3a8c0e3-b692-4128-8ee0-fdf15dfc0cc6" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Incluir Token inválido
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#f3a8c0e3-b692-4128-8ee0-fdf15dfc0cc6 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">8 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'api/Account/roles'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, tokeninvalido)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">401</span>, testBase.getStatusCodeMessage());<br>  should.equal(res.body.Message, <span class="hljs-string">'Usuário não autorizado'</span>, <span class="hljs-string">'401'</span>);<br>  done(err);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="2cfa6e61-66db-4db7-ac3e-65d262012b20" class="suite has-tests has-passed">
+            <h3 class="suite-title">API Bruce Campaign Monitor /Campanha</h3>
+            <h5 class="suite-filename">\test\campanha-tests.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="2cfa6e61-66db-4db7-ac3e-65d262012b20" class="suite-chart" width="50" height="50" data-total-passes="3" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">439 ms</li>
+                <li class="suite-summary-item tests">3</li>
+                <li class="suite-summary-item passed">3</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#2cfa6e61-66db-4db7-ac3e-65d262012b20-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="2cfa6e61-66db-4db7-ac3e-65d262012b20-test-list" class="list-group test-list collapse in">
+                    <div id="4f5a9a58-ecc7-47a0-843d-014403f78e3c" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Validando e extraindo token.. (Api Mobile v10: Método POST /Usuarios/AutenticarConta)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#4f5a9a58-ecc7-47a0-843d-014403f78e3c > .test-code.collapse">Code</button>
+              <span class="test-duration slow">155 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(auth_url)<br>.post(<span class="hljs-string">'/api/Usuarios/AutenticarConta'</span>)<br>.send({<br>  identificador: user.documento,<br>  senha: user.senha<br>})<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  setToken(res.body.token);<br>  done();<br><span class="hljs-comment">//  console.log('        token: ' , res.body.token);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="b29134e4-ff10-4a4e-a9b1-ee64d8f41ac3" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Quantidade - Obter quantidade da campanha
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b29134e4-ff10-4a4e-a9b1-ee64d8f41ac3 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">237 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'/campanha/12/quantidade'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(res.body.message).containEql(<span class="hljs-string">'Sucesso!'</span>);<br>  <span class="hljs-comment">//    console.log('        message: ' , res.body.message);</span><br>  done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="af968a8a-5944-4ffa-9b08-5c467989dc30" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Campanha - Obter campanha
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#af968a8a-5944-4ffa-9b08-5c467989dc30 > .test-code.collapse">Code</button>
+              <span class="test-duration medium">47 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'/Campanha'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(res.body.data[<span class="hljs-number">0</span>].descricao).containEql(<span class="hljs-string">'Campanha 001'</span>);<br>  should(res.body.data[<span class="hljs-number">1</span>].descricao).containEql(<span class="hljs-string">'Campanha 002'</span>);<br>  <span class="hljs-comment">//    console.log('        message: ' , res.body.data[0].descricao, res.body.data[1].descricao);</span><br>  done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="c7d131bb-f42c-49ad-9ba0-29361f2374e8" class="suite has-tests has-passed">
+            <h3 class="suite-title">API Bruce Campaign Monitor /Loja</h3>
+            <h5 class="suite-filename">\test\loja-tests.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="c7d131bb-f42c-49ad-9ba0-29361f2374e8" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">219 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#c7d131bb-f42c-49ad-9ba0-29361f2374e8-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="c7d131bb-f42c-49ad-9ba0-29361f2374e8-test-list" class="list-group test-list collapse in">
+                    <div id="4c227fde-995e-4242-8c17-654b065bec69" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Validando e extraindo token.. (Api Mobile v10: Método POST /Usuarios/AutenticarConta)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#4c227fde-995e-4242-8c17-654b065bec69 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">203 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(auth_url)<br>.post(<span class="hljs-string">'/api/Usuarios/AutenticarConta'</span>)<br>.send({<br>  identificador: user.documento,<br>  senha: user.senha<br>})<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  setToken(res.body.token);<br>  done();<br>  <span class="hljs-comment">//console.log('        token: ' , res.body.token);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="13ccb36f-f074-461b-a1c4-fc9bcb6142d5" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Loja - Obter Loja
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#13ccb36f-f074-461b-a1c4-fc9bcb6142d5 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">16 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'/Loja/0'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(<span class="hljs-literal">null</span>).not.be.ok();<br>  verificar=should(<span class="hljs-literal">null</span>).not.be.ok();<br>  <span class="hljs-comment">//console.log('        message: ', verificar);</span><br>  done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="69c42afa-a3d6-4ed8-9421-fc070fe633e3" class="suite has-tests has-passed">
+            <h3 class="suite-title">API Bruce Campaign Monitor /Mecanica</h3>
+            <h5 class="suite-filename">\test\mecanica-tests.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="69c42afa-a3d6-4ed8-9421-fc070fe633e3" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">148 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#69c42afa-a3d6-4ed8-9421-fc070fe633e3-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="69c42afa-a3d6-4ed8-9421-fc070fe633e3-test-list" class="list-group test-list collapse in">
+                    <div id="0ffb3434-74c6-423e-958e-496c4b389903" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Validando e extraindo token.. (Api Mobile v10: Método POST /Usuarios/AutenticarConta)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#0ffb3434-74c6-423e-958e-496c4b389903 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">132 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(auth_url)<br>.post(<span class="hljs-string">'/api/Usuarios/AutenticarConta'</span>)<br>.send({<br>  identificador: user.documento,<br>  senha: user.senha<br>})<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  setToken(res.body.token);<br>  done();<br><span class="hljs-comment">//  console.log('        token: ' , res.body.token);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="155c8ca4-1a7f-41e0-980c-8485267009a5" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Mecanica - Obter Mecanica
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#155c8ca4-1a7f-41e0-980c-8485267009a5 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">16 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'/Loja/0'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(res.body).not.be.ok();<br>  verificar=should(res.body).not.be.ok();<br><span class="hljs-comment">//  console.log('        message: ', verificar);</span><br>  done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="d492c5c3-cff0-499d-ae86-424b8c4f2408" class="suite has-tests has-passed">
+            <h3 class="suite-title">API Bruce Campaign Monitor /Mensagem</h3>
+            <h5 class="suite-filename">\test\mensagem_bonificacao-tests.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="d492c5c3-cff0-499d-ae86-424b8c4f2408" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">207 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#d492c5c3-cff0-499d-ae86-424b8c4f2408-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="d492c5c3-cff0-499d-ae86-424b8c4f2408-test-list" class="list-group test-list collapse in">
+                    <div id="3961f2ee-a446-411c-90af-a847bd08dcd5" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Validando e extraindo token.. (Api Mobile v10: Método POST /Usuarios/AutenticarConta)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#3961f2ee-a446-411c-90af-a847bd08dcd5 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">144 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(auth_url)<br>.post(<span class="hljs-string">'/api/Usuarios/AutenticarConta'</span>)<br>.send({<br>  identificador: user.documento,<br>  senha: user.senha<br>})<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  setToken(res.body.token);<br>  done();<br><span class="hljs-comment">//  console.log('        token: ' , res.body.token);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="7d9a689b-10c7-48c4-87b3-46aef7c3cfe5" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Bonificacao - Obter lista de Bonificacao
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#7d9a689b-10c7-48c4-87b3-46aef7c3cfe5 > .test-code.collapse">Code</button>
+              <span class="test-duration medium">63 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'/mensagem/bonificacao'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(res.body.data[<span class="hljs-number">0</span>].propriedades[<span class="hljs-number">0</span>].nome).containEql(<span class="hljs-string">'CargaArquivoId'</span>);<br>  should(res.body.data[<span class="hljs-number">0</span>].propriedades[<span class="hljs-number">1</span>].nome).containEql(<span class="hljs-string">'CodigoPOS'</span>);<br><span class="hljs-comment">//  console.log('   message: ' , res.body.data[0].propriedades[0].nome, res.body.data[0].propriedades[1].nome);</span><br>  done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="2d76ebc2-7606-47fa-9bf8-b71c2aca3474" class="suite has-tests has-passed">
+            <h3 class="suite-title">API Bruce Campaign Monitor /Mensagem</h3>
+            <h5 class="suite-filename">\test\mensagem_metrica-tests.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="2d76ebc2-7606-47fa-9bf8-b71c2aca3474" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">227 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#2d76ebc2-7606-47fa-9bf8-b71c2aca3474-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="2d76ebc2-7606-47fa-9bf8-b71c2aca3474-test-list" class="list-group test-list collapse in">
+                    <div id="27d63ef4-65c9-48ee-9c6d-20a686ed83df" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Validando e extraindo token.. (Api Mobile v10: Método POST /Usuarios/AutenticarConta)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#27d63ef4-65c9-48ee-9c6d-20a686ed83df > .test-code.collapse">Code</button>
+              <span class="test-duration slow">155 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(auth_url)<br>.post(<span class="hljs-string">'/api/Usuarios/AutenticarConta'</span>)<br>.send({<br>  identificador: user.documento,<br>  senha: user.senha<br>})<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  setToken(res.body.token);<br>  done();<br><span class="hljs-comment">//  console.log('        token: ' , res.body.token);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="1d638957-e31c-4d04-99e7-51dccade6e0e" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Metrica - Obter lista de Metrica
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#1d638957-e31c-4d04-99e7-51dccade6e0e > .test-code.collapse">Code</button>
+              <span class="test-duration medium">72 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'/mensagem/metrica'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(res.body.data[<span class="hljs-number">0</span>].propriedades[<span class="hljs-number">0</span>].nome).containEql(<span class="hljs-string">'UsrUsuarioId'</span>);<br>  should(res.body.data[<span class="hljs-number">0</span>].propriedades[<span class="hljs-number">1</span>].nome).containEql(<span class="hljs-string">'UsuarioIdParceiro'</span>);<br><span class="hljs-comment">//  console.log('   message: ' , res.body.data[0].propriedades[0].nome, res.body.data[0].propriedades[1].nome);</span><br>  done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="5daf762f-dea2-4e7c-a88f-8c31e84b132f" class="suite has-tests has-passed">
+            <h3 class="suite-title">API Bruce Campaign Monitor /Metrica</h3>
+            <h5 class="suite-filename">\test\metrica-tests.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="5daf762f-dea2-4e7c-a88f-8c31e84b132f" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">215 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#5daf762f-dea2-4e7c-a88f-8c31e84b132f-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="5daf762f-dea2-4e7c-a88f-8c31e84b132f-test-list" class="list-group test-list collapse in">
+                    <div id="a787a1a8-43f6-42e6-8862-cc456d5158e1" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Validando e extraindo token.. (Api Mobile v10: Método POST /Usuarios/AutenticarConta)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#a787a1a8-43f6-42e6-8862-cc456d5158e1 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">186 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(auth_url)<br>.post(<span class="hljs-string">'/api/Usuarios/AutenticarConta'</span>)<br>.send({<br>  identificador: user.documento,<br>  senha: user.senha<br>})<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  setToken(res.body.token);<br>  done();<br><span class="hljs-comment">//  console.log('        token: ' , res.body.token);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="8bccaaae-97db-4466-bc70-9c0af01daa3c" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Metrica - Obter lista de Metrica
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8bccaaae-97db-4466-bc70-9c0af01daa3c > .test-code.collapse">Code</button>
+              <span class="test-duration fast">29 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'/metrica'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(res.body.data[<span class="hljs-number">0</span>].descricao).containEql(<span class="hljs-string">'Métrica 001'</span>);<br>  should(res.body.data[<span class="hljs-number">1</span>].descricao).containEql(<span class="hljs-string">'Métrica 003'</span>);<br><span class="hljs-comment">//  console.log('   message: ' , res.body.data[0].descricao, res.body.data[1].descricao);</span><br>  done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="e29f872b-edf8-4b41-a940-983cd134ad91" class="suite has-tests has-passed">
+            <h3 class="suite-title">API Bruce Campaign Monitor /Operador</h3>
+            <h5 class="suite-filename">\test\operador-tests.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="e29f872b-edf8-4b41-a940-983cd134ad91" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">167 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#e29f872b-edf8-4b41-a940-983cd134ad91-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="e29f872b-edf8-4b41-a940-983cd134ad91-test-list" class="list-group test-list collapse in">
+                    <div id="89d5a3aa-43cf-41e8-9b8b-d12e9ac71829" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Validando e extraindo token.. (Api Mobile v10: Método POST /Usuarios/AutenticarConta)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#89d5a3aa-43cf-41e8-9b8b-d12e9ac71829 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">150 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(auth_url)<br>.post(<span class="hljs-string">'/api/Usuarios/AutenticarConta'</span>)<br>.send({<br>  identificador: user.documento,<br>  senha: user.senha<br>})<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  setToken(res.body.token);<br>  done();<br><span class="hljs-comment">//  console.log('        token: ' , res.body.token);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="3c6e0c47-77f0-414e-bb6b-eb5372a16d0d" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Operador - Obter lista de Operador &quot;Igual a&quot;
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#3c6e0c47-77f0-414e-bb6b-eb5372a16d0d > .test-code.collapse">Code</button>
+              <span class="test-duration fast">17 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'/Operador'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(res.body.data[<span class="hljs-number">0</span>].descricao).containEql(<span class="hljs-string">'Igual a'</span>);<br>  should(res.body.data[<span class="hljs-number">1</span>].descricao).containEql(<span class="hljs-string">'Diferente de'</span>);<br>  should(res.body.data[<span class="hljs-number">2</span>].descricao).containEql(<span class="hljs-string">'Maior que'</span>);<br>  should(res.body.data[<span class="hljs-number">3</span>].descricao).containEql(<span class="hljs-string">'Maior ou igual a'</span>);<br>  should(res.body.data[<span class="hljs-number">4</span>].descricao).containEql(<span class="hljs-string">'Menor que'</span>);<br>  should(res.body.data[<span class="hljs-number">5</span>].descricao).containEql(<span class="hljs-string">'Menor ou igual a'</span>);<br>  should(res.body.data[<span class="hljs-number">6</span>].descricao).containEql(<span class="hljs-string">'Dentro do range'</span>);<br>  should(res.body.data[<span class="hljs-number">7</span>].descricao).containEql(<span class="hljs-string">'Fora do range'</span>);<br>  should(res.body.data[<span class="hljs-number">8</span>].descricao).containEql(<span class="hljs-string">'Dentro do intervalo'</span>);<br>  should(res.body.data[<span class="hljs-number">9</span>].descricao).containEql(<span class="hljs-string">'E'</span>);<br>  should(res.body.data[<span class="hljs-number">10</span>].descricao).containEql(<span class="hljs-string">'Ou'</span>);<br>  should(res.body.data[<span class="hljs-number">11</span>].descricao).containEql(<span class="hljs-string">'Não nulo'</span>);<br><span class="hljs-comment">/*  console.log('   message: ' , res.body.data[0].descricao,res.body.data[1].descricao,res.body.data[2].descricao,<br>  res.body.data[3].descricao, res.body.data[4].descricao, res.body.data[5].descricao,res.body.data[6].descricao,<br>  res.body.data[7].descricao, res.body.data[8].descricao,  res.body.data[9].descricao, res.body.data[10].descricao,<br>  res.body.data[11].descricao);<br>   */</span><br>  done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="5a4460d7-f87b-4851-a86d-0e1d1c3df35d" class="suite has-tests has-passed">
+            <h3 class="suite-title">API Bruce Campaign Monitor /Parceiro</h3>
+            <h5 class="suite-filename">\test\parceiro-tests.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="5a4460d7-f87b-4851-a86d-0e1d1c3df35d" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">248 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#5a4460d7-f87b-4851-a86d-0e1d1c3df35d-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="5a4460d7-f87b-4851-a86d-0e1d1c3df35d-test-list" class="list-group test-list collapse in">
+                    <div id="1926f507-adbf-40d6-9988-16f046791c8c" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Validando e extraindo token.. (Api Mobile v10: Método POST /Usuarios/AutenticarConta)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#1926f507-adbf-40d6-9988-16f046791c8c > .test-code.collapse">Code</button>
+              <span class="test-duration slow">158 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(auth_url)<br>.post(<span class="hljs-string">'/api/Usuarios/AutenticarConta'</span>)<br>.send({<br>  identificador: user.documento,<br>  senha: user.senha<br>})<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  setToken(res.body.token);<br>  done();<br><span class="hljs-comment">//  console.log('        token: ' , res.body.token);</span><br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="06bd2211-e5f0-4fd5-a222-c73a8dcfb7c5" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              GET /Parceiro - Obter lista de parceiros
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#06bd2211-e5f0-4fd5-a222-c73a8dcfb7c5 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">90 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(url)<br>.get(<span class="hljs-string">'/Parceiro'</span>)<br>.set(<span class="hljs-string">'Authorization-Token'</span>, token)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>  should.equal(res.status, <span class="hljs-number">200</span>, testBase.getStatusCodeMessage());<br>  should(res.body[<span class="hljs-number">0</span>].nome).containEql(<span class="hljs-string">'Dotz Troca'</span>);<br>  should(res.body[<span class="hljs-number">1</span>].nome).containEql(<span class="hljs-string">'Magazine Luiza'</span>);<br><span class="hljs-comment">//  console.log('        message: ' , res.body[0].nome, res.body[1].nome);</span><br>  done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2016.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
